@@ -21,7 +21,7 @@ def main():
     args = parse_args()
     batch_size = args.batch_size
 
-    tokenizer = AutoTokenizer.from_pretrained("./gda-qa-lora/checkpoint-294")
+    tokenizer = AutoTokenizer.from_pretrained("./gda-qa-lora/checkpoint-294", padding_side = "left")
 
     model = AutoPeftModelForCausalLM.from_pretrained(
         "./gda-qa-lora/checkpoint-294",
@@ -46,7 +46,7 @@ def main():
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    start = time.time()
+    start = 0.0
     with torch.no_grad(): 
         for i, batch in enumerate(dataloader):
             messages = [
@@ -59,9 +59,14 @@ def main():
                 return_dict=True,
                 return_tensors="pt",
             ).to(device)
+            if i > 10:
+                if start == 0.0:
+                    start = time.time()
+            torch.cuda.synchronize()
             outputs = model(**inputs, max_new_tokens=40)
+            torch.cuda.synchronize()
             end = time.time()
-            print(f"{(batch_size * i) / (end - start)}")
+            print(f"{(batch_size * (i - 10)) / (end - start)}")
 
 
 if __name__ == "__main__":
