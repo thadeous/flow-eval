@@ -1,0 +1,212 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 30876155,
+  "description": "",
+  "download_size": 15380800,
+  "features": {
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dur": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "proto": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "service": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "state": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "spkts": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dpkts": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "sbytes": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dbytes": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "rate": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "sttl": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dttl": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "sload": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "dload": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "sloss": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dloss": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "sinpkt": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "dinpkt": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "sjit": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "djit": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "swin": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "stcpb": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dtcpb": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dwin": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "tcprtt": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "synack": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "ackdat": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "smean": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "dmean": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "trans_depth": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "response_body_len": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_srv_src": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_state_ttl": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_dst_ltm": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_src_dport_ltm": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_dst_sport_ltm": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_dst_src_ltm": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "is_ftp_login": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_ftp_cmd": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_flw_http_mthd": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_src_ltm": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "ct_srv_dst": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "is_sm_ips_ports": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "attack_cat": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "data": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 46256955,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 30876155,
+      "num_examples": 82332,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
